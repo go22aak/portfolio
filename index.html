@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <a class="logo" href="#">YourName</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div>
+        <h1>Hi, I’m <span>Your Name</span>.</h1>
+        <p class="subtitle">
+          Computer Science student in the UK. I build software and solve problems.
+        </p>
+        <div class="buttons">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="card">
+        <p><strong>Currently:</strong> Final-year CS student (Graduating 2026)</p>
+        <p><strong>Focus:</strong> Software Engineering • AI • Networking</p>
+        <p><strong>Location:</strong> UK</p>
+      </div>
+    </section>
+  </header>
+
+  <main class="container">
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p>
+        Write 3–5 lines about you. Mention what you’re studying, what you enjoy building,
+        and what roles you’re looking for (internships/graduate roles).
+      </p>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <div class="grid">
+        <article class="project">
+          <h3>Healthcare Management System</h3>
+          <p>Designed a UK healthcare system with appointments, referrals, prescriptions, and 3-tier architecture.</p>
+          <div class="tags">
+            <span>UML</span><span>MVC</span><span>Architecture</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noreferrer">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>IoT Humidity Monitor (ESP32)</h3>
+          <p>ESP32 + DHT22 system with RGB LED status and buzzer alerts using interrupts.</p>
+          <div class="tags">
+            <span>ESP32</span><span>IoT</span><span>C++</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>AI Grid Worlds</h3>
+          <p>Implemented agents in safety gridworld environments and analysed performance.</p>
+          <div class="tags">
+            <span>Python</span><span>RL</span><span>AI Safety</span>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul class="skills">
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>Linux</li>
+        <li>Networking (VLANs, DHCP, IPv6)</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Best way to reach me:</p>
+      <div class="contact">
+        <a href="mailto:youremail@example.com">youremail@example.com</a>
+        <a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
